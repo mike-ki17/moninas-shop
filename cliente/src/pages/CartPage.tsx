@@ -25,7 +25,7 @@ const CartPage: React.FC = () => {
   };
 
   // WhatsApp checkout link
-  const whatsappLink = `https://wa.me/123456789?text=${formatWhatsAppMessage()}`;
+  const whatsappLink = `https://wa.me/3124046068?text=${formatWhatsAppMessage()}`;
 
   if (cartItems.length === 0) {
     return (

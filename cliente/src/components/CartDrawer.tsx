@@ -43,7 +43,7 @@ const CartDrawer: React.FC<CartDrawerProps> = ({ isOpen, onClose }) => {
   };
 
   // WhatsApp checkout link
-  const whatsappLink = `https://wa.me/123456789?text=${formatWhatsAppMessage()}`;
+  const whatsappLink = `https://wa.me/3124046068?text=${formatWhatsAppMessage()}`;
 
   return (
     <div className={`fixed inset-0 z-50 flex justify-end transition-opacity duration-300 ${
