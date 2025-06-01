@@ -11,7 +11,7 @@ import LoginPage from './pages/LoginPage';
 import CartPage from './pages/CartPage';
 import CartDrawer from './components/CartDrawer';
 import { CartProvider, useCart } from './context/CartContext';
-
+import ScrollToTop  from './components/ScrollToTop';
 const App: React.FC = () => {
   const [isCartOpen, setIsCartOpen] = useState(false);
 
@@ -22,6 +22,7 @@ const App: React.FC = () => {
   return (
     <CartProvider>
       <Router>
+        <ScrollToTop />
         <div className="flex flex-col min-h-screen">
           <Navbar />
           
