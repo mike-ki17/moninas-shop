@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { ShoppingCart, Menu, X, LogIn, User } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
-import logoBlanco from '../public/logo3.png'; // Adjust the path as necessary
-import logoOriginal from '../public/logo.png'; // Adjust the path as necessary
+import logoBlanco from '../../public/logo3.png'; // Adjust the path as necessary
+import logoOriginal from '../../public/logo.png'; // Adjust the path as necessary
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

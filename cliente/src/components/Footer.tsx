@@ -1,7 +1,7 @@
 import React from 'react';
 import { Phone, Mail, MapPin, Instagram, Facebook, Twitter } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import logoBlanco from '../public/logo3.png'; // Adjust the path as necessary
+import logoBlanco from '../../public/logo3.png'; // Adjust the path as necessary
 
 const Footer: React.FC = () => {
   return (
