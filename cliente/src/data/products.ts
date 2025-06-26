@@ -1,4 +1,7 @@
 import { Product } from '../types';
+import product_001 from '../../public/productos/producto_001.png';
+import product_002 from '../../public/productos/producto_002.png';
+import product_003 from '../../public/productos/producto_003.png';
 
 export const products: Product[] = [
   // {
@@ -35,7 +38,7 @@ export const products: Product[] = [
     name: "Pasteles de Yuca x5",
     description: "5 Pastelitos de yuca rellenos de queso, crujiente por fuera y suave por dentro",
     price: 15000,
-    imageUrl: "../../public/productos/producto_001.png",
+    imageUrl: product_001,
     category: "pasteles",
     popular: true,
     ingredients: ["Yuca", "Queso", "Mantequilla", "Huevo", "Sal"]
@@ -64,7 +67,7 @@ export const products: Product[] = [
     name: "Pasteles de Yuca x3",
     description: "3 Pastelitos de yuca rellenos de queso, crujiente por fuera y suave por dentro",
     price: 9000,
-    imageUrl: "../../public/productos/producto_002.png",
+    imageUrl: product_002,
     category: "pasteles",
     popular: true,
     ingredients: ["Yuca", "Queso", "Mantequilla", "Huevo", "Sal"]
@@ -74,7 +77,7 @@ export const products: Product[] = [
     name: "Empanadas x4",
     description: "4 Empanadas tradicionales con pollo desmenuzado",
     price: 12000,
-    imageUrl: "../../public/productos/producto_003.png",
+    imageUrl: product_003,
     category: "pasteles",
     popular: true,
     ingredients: ["Yuca", "Queso", "Mantequilla", "Huevo", "Sal"]

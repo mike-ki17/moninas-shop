@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ShoppingBag, Users } from 'lucide-react';
-
+import  banner  from '../../public/banner.jpg' 
 const Hero: React.FC = () => {
   return (
     <div className="relative min-h-screen flex items-center">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="../../public/banner.jpg" 
+          src={banner} 
           alt="Empanadas frescas" 
           className="w-full h-full object-cover"
         />
