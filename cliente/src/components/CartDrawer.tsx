@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import { X, Trash2, Plus, Minus, ShoppingBag } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 import { Link } from 'react-router-dom';
+import { formattedPrice } from '../utils/FormatPrice';
 
 interface CartDrawerProps {
   isOpen: boolean;
@@ -37,7 +38,7 @@ const CartDrawer: React.FC<CartDrawerProps> = ({ isOpen, onClose }) => {
       message += `• ${item.quantity}x ${item.product.name} - $${(item.product.price * item.quantity).toFixed(2)}\n`;
     });
     
-    message += `\nTotal: $${cartTotal.toFixed(2)}`;
+    message += `\nTotal: $${formattedPrice(cartTotal)}\n\n`;
     
     return encodeURIComponent(message);
   };
@@ -105,7 +106,7 @@ const CartDrawer: React.FC<CartDrawerProps> = ({ isOpen, onClose }) => {
                         <Trash2 size={18} />
                       </button>
                     </div>
-                    <p className="text-neutral-500 text-sm">${item.product.price.toFixed(2)}</p>
+                    <p className="text-neutral-500 text-sm">${formattedPrice(item.product.price)}</p>
                     
                     {/* Quantity Controls */}
                     <div className="flex items-center mt-2">
@@ -124,7 +125,7 @@ const CartDrawer: React.FC<CartDrawerProps> = ({ isOpen, onClose }) => {
                       </button>
                       
                       <div className="ml-auto font-semibold">
-                        ${(item.product.price * item.quantity).toFixed(2)}
+                        ${formattedPrice(item.product.price * item.quantity)}
                       </div>
                     </div>
                   </div>
@@ -139,7 +140,7 @@ const CartDrawer: React.FC<CartDrawerProps> = ({ isOpen, onClose }) => {
           <div className="border-t p-4">
             <div className="flex justify-between mb-4">
               <span className="font-semibold">Total</span>
-              <span className="font-bold text-lg">${cartTotal.toFixed(2)}</span>
+              <span className="font-bold text-lg">${formattedPrice(cartTotal)}</span>
             </div>
             
             <a 

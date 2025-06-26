@@ -32,7 +32,7 @@ const App: React.FC = () => {
               <Route path="/menu" element={<MenuPage />} />
               <Route path="/wholesale" element={<WholesalePage />} />
               <Route path="/promotions" element={<PromotionsPage />} />
-              <Route path="/login" element={<LoginPage />} />
+              {/* <Route path="/login" element={<LoginPage />} /> */}
               <Route path="/cart" element={<CartPage />} />
             </Routes>
           </main>

@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.pexels.com/photos/6941023/pexels-photo-6941023.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+          src="../../public/banner.jpg" 
           alt="Empanadas frescas" 
           className="w-full h-full object-cover"
         />
@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
             Sabor <span className="text-primary">Auténtico</span> en Cada Bocado
           </h1>
           <p className="text-lg md:text-xl opacity-90 mb-8">
-            Empanadas y pasteles de yuca elaborados con ingredientes frescos y recetas tradicionales. Del sabor de la calle a tu mesa.
+            Empanadas y pasteles de yuca elaborados con ingredientes frescos y recetas tradicionales.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">

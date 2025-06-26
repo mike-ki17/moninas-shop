@@ -13,9 +13,9 @@ const Footer: React.FC = () => {
             {/* <h3 className="text-2xl font-bold mb-4">Empanadería</h3> */}
             <img src={logoBlanco} alt="Logo" className='w-48 mb-4' />
             <p className="text-neutral-300 mb-4">
-              Sabores auténticos en cada bocado. Desde 2010 sirviendo las mejores empanadas y pasteles de yuca de la ciudad.
+              Sabores auténticos en cada bocado. Sirviendo las mejores empanadas y pasteles de yuca de la ciudad.
             </p>
-            <div className="flex space-x-4">
+            {/* <div className="flex space-x-4">
               <a href="#" className="text-white hover:text-primary transition-colors">
                 <Instagram size={20} />
               </a>
@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
               <a href="#" className="text-white hover:text-primary transition-colors">
                 <Twitter size={20} />
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Quick Links */}
@@ -44,14 +44,14 @@ const Footer: React.FC = () => {
               <li>
                 <Link to="/promotions" className="text-neutral-300 hover:text-primary transition-colors">Promociones</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/login" className="text-neutral-300 hover:text-primary transition-colors">Mi Cuenta</Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 
           {/* Legal */}
-          <div>
+          {/* <div>
             <h4 className="text-xl font-bold mb-4">Legal</h4>
             <ul className="space-y-2">
               <li>
@@ -67,23 +67,23 @@ const Footer: React.FC = () => {
                 <Link to="/faq" className="text-neutral-300 hover:text-primary transition-colors">Preguntas Frecuentes</Link>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Contact */}
           <div>
             <h4 className="text-xl font-bold mb-4">Contacto</h4>
             <ul className="space-y-3">
-              <li className="flex items-start space-x-3">
+              {/* <li className="flex items-start space-x-3">
                 <MapPin className="text-primary mt-1" size={18} />
                 <span className="text-neutral-300">Av. Principal 123, Ciudad</span>
-              </li>
+              </li> */}
               <li className="flex items-center space-x-3">
                 <Phone className="text-primary" size={18} />
-                <span className="text-neutral-300">+123 456 7890</span>
+                <span className="text-neutral-300">3124046068</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="text-primary" size={18} />
-                <span className="text-neutral-300">info@empanaderia.com</span>
+                <span className="text-neutral-300">moninasplus@gmail.com</span>
               </li>
             </ul>
           </div>

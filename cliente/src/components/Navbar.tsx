@@ -54,10 +54,10 @@ const Navbar: React.FC = () => {
           <Link to="/promotions" className={`font-medium ${isScrolled ? 'text-neutral-900 hover:text-primary' : 'text-white hover:text-primary-100'}`}>
             Promociones
           </Link>
-          <Link to="/login" className={`flex items-center space-x-1 font-medium ${isScrolled ? 'text-neutral-900 hover:text-primary' : 'text-white hover:text-primary-100'}`}>
+          {/* <Link to="/login" className={`flex items-center space-x-1 font-medium ${isScrolled ? 'text-neutral-900 hover:text-primary' : 'text-white hover:text-primary-100'}`}>
             <LogIn size={18} />
             <span>Ingresar</span>
-          </Link>
+          </Link> */}
           <Link to="/cart" className="relative">
             <ShoppingCart className={`${isScrolled ? 'text-neutral-900' : 'text-white'}`} />
             {itemCount > 0 && (
