@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { wholesalePrices, wholesaleBenefits } from '../data/wholesale';
 import { products } from '../data/products';
 import { Link } from 'react-router-dom';
+import { formattedPrice } from '../utils/FormatPrice';
 
 const WholesalePage: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -34,7 +35,7 @@ Cantidad: ${formData.quantity}
 Mensaje: ${formData.message}`;
     
     // Open WhatsApp with pre-filled message
-    window.open(`https://wa.me/123456789?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/3124046068?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   return (
@@ -101,7 +102,7 @@ Mensaje: ${formData.message}`;
                     {wholesalePrices.empanadas.map((price, index) => (
                       <tr key={index} className="border-b border-neutral-200">
                         <td className="py-3">{price.quantity} unidades</td>
-                        <td className="py-3 text-right font-semibold">${price.pricePerUnit.toFixed(2)}</td>
+                        <td className="py-3 text-right font-semibold">${formattedPrice(price.pricePerUnit)}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -130,7 +131,7 @@ Mensaje: ${formData.message}`;
                     {wholesalePrices.pasteles.map((price, index) => (
                       <tr key={index} className="border-b border-neutral-200">
                         <td className="py-3">{price.quantity} unidades</td>
-                        <td className="py-3 text-right font-semibold">${price.pricePerUnit.toFixed(2)}</td>
+                        <td className="py-3 text-right font-semibold">${formattedPrice(price.pricePerUnit)}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -280,7 +281,7 @@ Mensaje: ${formData.message}`;
       </section>
       
       {/* Testimonials */}
-      <section className="py-16 bg-neutral-800 text-white">
+      {/* <section className="py-16 bg-neutral-800 text-white">
         <div className="container-custom">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Lo que dicen nuestros clientes mayoristas</h2>
           
@@ -325,7 +326,7 @@ Mensaje: ${formData.message}`;
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       
       {/* CTA */}
       <section className="py-16 bg-primary">
@@ -338,7 +339,7 @@ Mensaje: ${formData.message}`;
             <a href="#quote" className="btn bg-white text-primary hover:bg-neutral-100">
               Solicitar Cotización
             </a>
-            <a href="tel:+123456789" className="btn bg-transparent border-2 border-white text-white hover:bg-white/10">
+            <a href="tel:+573124046068" className="btn bg-transparent border-2 border-white text-white hover:bg-white/10">
               Llamar Ahora
             </a>
           </div>

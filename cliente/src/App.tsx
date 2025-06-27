@@ -6,8 +6,8 @@ import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import MenuPage from './pages/MenuPage';
 import WholesalePage from './pages/WholesalePage';
-import PromotionsPage from './pages/PromotionsPage';
-import LoginPage from './pages/LoginPage';
+// import PromotionsPage from './pages/PromotionsPage';
+// import LoginPage from './pages/LoginPage';
 import CartPage from './pages/CartPage';
 import CartDrawer from './components/CartDrawer';
 import { CartProvider, useCart } from './context/CartContext';
@@ -31,7 +31,7 @@ const App: React.FC = () => {
               <Route path="/" element={<HomePage />} />
               <Route path="/menu" element={<MenuPage />} />
               <Route path="/wholesale" element={<WholesalePage />} />
-              <Route path="/promotions" element={<PromotionsPage />} />
+              {/* <Route path="/promotions" element={<PromotionsPage />} /> */}
               {/* <Route path="/login" element={<LoginPage />} /> */}
               <Route path="/cart" element={<CartPage />} />
             </Routes>

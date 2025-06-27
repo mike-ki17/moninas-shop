@@ -51,9 +51,9 @@ const Navbar: React.FC = () => {
           <Link to="/wholesale" className={`font-medium ${isScrolled ? 'text-neutral-900 hover:text-primary' : 'text-white hover:text-primary-100'}`}>
             Mayoristas
           </Link>
-          <Link to="/promotions" className={`font-medium ${isScrolled ? 'text-neutral-900 hover:text-primary' : 'text-white hover:text-primary-100'}`}>
+          {/* <Link to="/promotions" className={`font-medium ${isScrolled ? 'text-neutral-900 hover:text-primary' : 'text-white hover:text-primary-100'}`}>
             Promociones
-          </Link>
+          </Link> */}
           {/* <Link to="/login" className={`flex items-center space-x-1 font-medium ${isScrolled ? 'text-neutral-900 hover:text-primary' : 'text-white hover:text-primary-100'}`}>
             <LogIn size={18} />
             <span>Ingresar</span>

@@ -73,12 +73,12 @@ export const products: Product[] = [
     ingredients: ["Yuca", "Queso", "Mantequilla", "Huevo", "Sal"]
   },
   {
-    id: 7,
+    id: 8,
     name: "Empanadas x4",
     description: "4 Empanadas tradicionales con pollo desmenuzado",
     price: 12000,
     imageUrl: product_003,
-    category: "pasteles",
+    category: "empanadas",
     popular: true,
     ingredients: ["Yuca", "Queso", "Mantequilla", "Huevo", "Sal"]
   },
@@ -106,8 +106,8 @@ export const productCategories = [
   { id: "all", name: "Todos" },
   { id: "empanadas", name: "Empanadas" },
   { id: "pasteles", name: "Pasteles de Yuca" },
-  { id: "bebidas", name: "Bebidas" },
-  { id: "combos", name: "Combos" }
+  // { id: "bebidas", name: "Bebidas" },
+  // { id: "combos", name: "Combos" }
 ];
 
 export const getProductsByCategory = (category: string): Product[] => {

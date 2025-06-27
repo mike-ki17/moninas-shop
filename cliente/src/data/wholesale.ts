@@ -2,16 +2,16 @@ import { WholesalePrice } from '../types';
 
 export const wholesalePrices: Record<string, WholesalePrice[]> = {
   "empanadas": [
-    { quantity: 25, pricePerUnit: 2.00 },
-    { quantity: 50, pricePerUnit: 1.80 },
-    { quantity: 100, pricePerUnit: 1.60 },
-    { quantity: 200, pricePerUnit: 1.40 }
+    { quantity: 25, pricePerUnit: 2500 },
+    { quantity: 50, pricePerUnit: 2250 },
+    { quantity: 100, pricePerUnit: 2000 },
+    { quantity: 200, pricePerUnit: 1850 }
   ],
   "pasteles": [
-    { quantity: 25, pricePerUnit: 2.25 },
-    { quantity: 50, pricePerUnit: 2.00 },
-    { quantity: 100, pricePerUnit: 1.85 },
-    { quantity: 200, pricePerUnit: 1.65 }
+    { quantity: 25, pricePerUnit: 2800 },
+    { quantity: 50, pricePerUnit: 2500 },
+    { quantity: 100, pricePerUnit: 2200 },
+    { quantity: 200, pricePerUnit: 2000 }
   ]
 };
 

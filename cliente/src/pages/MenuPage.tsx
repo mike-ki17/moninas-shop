@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { getProductsByCategory, productCategories } from '../data/products';
+import { getProductsByCategory } from '../data/products';
 import ProductCard from '../components/ProductCard';
 import CategoryFilter from '../components/CategoryFilter';
 import { Search } from 'lucide-react';
+import producto_001 from '../../public/productos/producto_001.png'
 
 const MenuPage: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState('all');
@@ -103,7 +104,7 @@ const MenuPage: React.FC = () => {
                 Contáctanos para discutir tus requerimientos.
               </p>
               <a 
-                href="https://wa.me/123456789" 
+                href="https://wa.me/3124046068" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="btn bg-primary text-white hover:bg-primary-600"
@@ -113,7 +114,7 @@ const MenuPage: React.FC = () => {
             </div>
             <div className="md:w-1/2">
               <img 
-                src="https://images.pexels.com/photos/5718031/pexels-photo-5718031.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                src={producto_001} 
                 alt="Pedidos personalizados" 
                 className="rounded-lg shadow-lg w-full"
               />
